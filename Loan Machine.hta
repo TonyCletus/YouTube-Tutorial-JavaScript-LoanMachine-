@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Loan Machine </title>
+<meta charset="UTF-8">
+
+
+<script>
+
+function computeLoan(){
+   var loan = document.getElementById('loan').value;
+   var interest_rate = document.getElementById('interest_rate').value;
+   var months = document.getElementById('months').value;
+   var interest = (loan * (interest_rate * .01)) / months;
+   var payment =  ((loan / months) + interest).toFixed(2);
+   payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+   document.getElementById('payment').innerHTML = "Monthly Payment= N"+payment;
+}
+</script>
+<link href="loanstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="images/bd.jpg">
+<center>
+  <form>
+    <h1><strong>WORKERS LOAN/SALARY SCALE MACHINE</strong></h1>
+        <br>Amount loaned:</br>
+        <p><input type="number" id="loan" min="1" max="1000000" placeholder="Naira" onchange="computeLoan()"></p>
+        <br>Interest Rate (%):</br>
+        <p><input type="number" id="interest_rate" min="0" max="100" placeholder="" value="10" step=".1" onchange="computeLoan()"></p>
+        <br>Months:</br>
+       	<p><input type="number" id="months" min="1" max="72" value="1" step="1" onchange="computeLoan()"></p>
+ </form>
+      <h2 id="payment"></h2>
+
+
+<marquee>
+   <strong>
+        Hi...Get Your loan, Utilize it well, and pay back with little interest... All right reserved 2017
+   </strong>
+</marquee>
+
+   <div>
+   Powered by TonyCletus
+   <div>
+
+
+</body>
+</html>

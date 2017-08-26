@@ -1,0 +1,78 @@
+<style>
+
+ body{
+    margin:  0px;
+    padding: 0px;
+	}
+	
+ center{
+	margin: 0px;
+    padding: 0px	
+   }
+
+form input{
+	background-color: #ffff97;
+    color:            black;   
+    margin:           0px 0px 10px 0px;
+    padding:          5px 5px 10px 20px;	
+	border-radius:    10px;
+	font-size:        30px;
+	}   
+   
+center form{
+	background-color: rgba(0,0,0,0.3);
+    color:         #ffff88;  
+    margin:        0px 300px 0px 300px;
+    padding:       20px 20px 2px 20px;
+    border-radius: 20px;
+	font-family:   Elephant;
+	font-size:     20px;
+    }  
+
+center h2{
+	margin:         0px;
+	background:     #ffff97;;
+	color:          black;
+	list-style-type:none;
+	margin:         px;
+    padding:        15px;
+	border-radius:  10px;
+	font-size:      25px;
+   }
+
+form h1 h2 br p{
+    margin:0px;
+   }
+
+form h1{
+  font-size: 150%;
+}
+
+form p{
+	margin:0px;
+   }
+form br{
+	margin:0px;
+   }
+center marquee{
+   font-family:    Agency fb;
+   color:          black;
+   background-color: white;
+   font-size:     25px;
+   margin:        0px;
+   padding:       14px;
+   height:        20px;
+}
+
+center div{
+	margin:0px;
+    display:        inline-block;
+	background:     #331100;
+	color:          white;
+	list-style-type:none;
+	margin:         0px;
+    padding:        10px;
+	border-radius:  10px;
+	font-size:      20px;	
+}
+</style>
